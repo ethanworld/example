@@ -3,9 +3,7 @@
 #include <sys/shm.h>
 #include <sys/unistd.h>
 #include <string.h>
-
-#define SHM_SIZE 4096
-#define PRINT_SUCCESSFUL printf("[%s] successful...\n--------------------------------\n", __func__)
+#include "lib.h"
 
 int get_nattch(int shmid) {
     struct shmid_ds ds = {};
