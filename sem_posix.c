@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <sys/mman.h>
+#include <unistd.h>
 #include "lib.h"
 
 static char posix_sem_name[] = "/sem_demo";
@@ -49,7 +50,6 @@ void posix_sem_case1()
  */
 void posix_sem_case2()
 {
-
     for (int i = 0; i < 3; i++) {
         if (fork() != 0) {
             continue;

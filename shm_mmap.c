@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include "lib.h"
 
-static char SHM_FILEPATH[] = "/coding/example/test_shm_file";
+static char SHM_FILEPATH[] = "/coding/example/shm_test_file";
 static char SHM_INIT_CONTENT[] = "hello,world";
 
 void write_file(char *expect_str)
