@@ -3,6 +3,7 @@
 #include <sys/msg.h>
 #include <unistd.h>
 #include <string.h>
+#include <signal.h>
 #include "lib.h"
 
 /**
